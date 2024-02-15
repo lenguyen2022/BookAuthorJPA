@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Index Page</title>
+    <link th:href="@{/css/main.css}" rel="stylesheet" />
+</head>
+<body>
+<p> Author List </p>
+<table th:if="${authorSet != null and authorSet != ''}">
+    <tr th:each="author : ${authorSet}">
+        <td th:text="${author.name}">Frank</td>
+    </tr>
+</table>
+<hr>
+<p th:text="'Book of ' + ${author.name}"> Book set of Author </p>
+<table th:if="${bookSet != null and bookSet != ''}">
+    <tr th:each="book : ${bookSet}">
+        <td th:text="${book}">Java 101</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,10 @@
+table, th, td {
+    border:1px solid black;
+    background-color: #cad8eb;
+    text-align: right;
+}
+
+p{
+    background-color: #f5f6f8;
+    color: black;
+}
